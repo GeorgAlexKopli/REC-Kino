@@ -11,7 +11,7 @@
     <div id="app">
         
         <div class="navbar">
-            <div class="logo">REC KLUBI</div>
+            <img class="logo" src="logo.png" alt="REC klubi"></img>
             <div class="cinema-dropdown" @click="toggleDropdown">
                 <span class="location-icon">📍</span>
                 <span>Kino <br> Tallinn - Kõik kinod</span>
@@ -42,7 +42,7 @@
                 
                 <div class="movie-card" v-for="movie in movies" :key="movie.title">
                     <a :href="movie.link">
-                        <div class="movie-image">test</div>
+                        <img class="movie-image" :src="movie.image" alt="Movie Image">
                         <div class="movie-title">{{ movie.title }}</div>
                     </a>
                     <div class="age-rating" :class="movie.ageRating">{{ movie.ageRatingText }}</div>

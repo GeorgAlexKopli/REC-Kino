@@ -20,9 +20,9 @@ body {
 }
 
 .logo {
-    font-weight: bold;
-    color: #FFD700;
-    font-size: 1.2em;
+    image-rendering: auto;
+    image-resolution: auto;
+    height: 50px;
 }
 
 .cinema-dropdown {
@@ -127,7 +127,9 @@ body {
 
 .movie-image {
     background-color: gray;
-    height: 200px;
+    image-rendering: auto;
+    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
