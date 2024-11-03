@@ -38,21 +38,14 @@ body {
     font-size: 1.2em;
     box-sizing: border-box;
     gap: 10px;
-    position: relative;
 }
 
 .cinema-dropdown .location-icon {
     color: #FF4500;
-    margin-right: 8px;
 }
 
 .cinema-dropdown .dropdown-icon {
     margin-left: auto;
-    padding-left: 8px;
-}
-
-.cinema-dropdown span {
-    margin-right: 8px;
 }
 
 .search-bar {
@@ -104,11 +97,12 @@ body {
 .top-movies {
     color: black;
     padding: 20px;
+    padding-bottom: 150px;
     text-align: center;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .show-schedule {
@@ -117,13 +111,15 @@ body {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: auto;
+    border-radius: 5px;
 }
 
 .movie-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 50px;
     justify-content: center;
     margin-top: 20px;
 }
@@ -135,7 +131,9 @@ body {
     text-align: center;
     border-radius: 10px;
     position: relative;
+    transform: scale(1.5);
     border: 5px solid #D3D3D3;
+    
 }
 
 .movie-image {
@@ -173,36 +171,4 @@ body {
 
 .age-rating.pg3 {
     background-color: blue;
-}
-
-.cinema-dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 100%;
-    left: 0;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.cinema-dropdown.show .dropdown-content {
-    display: block;
 }
