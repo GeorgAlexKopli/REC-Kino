@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,27 @@
     <title>REC login</title>
     <link rel="stylesheet" href="login.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <img class="logo" src="logo.png" alt="REC klubi"></img>
 </head>
 <body>
     <form action="/login.html" method="post">
-        <label for="username">Username:</label>
+        
+        <h1>Tere Tulemast!</h1>
+        <h2>Logi sisse isikutuvastamiseks.</h2>
+        <div class="kast">
+        <label for="username">Kasutajanimi:</label>
         <input type="text" id="username" name="username"><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-        <button type="submit">Login</button>
+        <label for="password">Parool:</label>
+        <input type="password" id="password" name="password">
+        </div>
+        <br><br>
+        <button type="submit" class="login-button">Logi sisse</button>
+        <button type="button" class="back-button" onclick="window.location.href='avaleht.html';">Tagasi</button>
+        <br><br>
+        <a>Pole kontot?</a>
+        <a href="registration.html" class="underline" target="_blank" rel="noopener noreferrer">Registreeru kohe!</a>
     </form>
+    
 </body>
 </html>
+
