@@ -16,6 +16,11 @@
                 <span class="location-icon">📍</span>
                 <span>Kino <br> Tallinn - Kõik kinod</span>
                 <span class="dropdown-icon">▼</span> 
+                <div class="dropdown-content">
+                    <a href="#">Kino 1</a>
+                    <a href="#">Kino 2</a>
+                    <a href="#">Kino 3</a>
+                </div>
             </div>
             <div class="search-bar-container">
                 <input type="text" class="search-bar" placeholder="🔍Search...">
@@ -55,3 +60,11 @@
     <script src="app.js"></script>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.querySelector('.cinema-dropdown');
+        dropdown.addEventListener('click', function() {
+            this.classList.toggle('show');
+        });
+    });
+</script>
