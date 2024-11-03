@@ -104,30 +104,31 @@ body {
 
 .top-movies {
     color: black;
-    padding: 20px;
+    padding: 0px;
+    padding-bottom: 150px;
     text-align: center;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 100px;
+    
 }
 
 .show-schedule {
-    background-color: #FFA07A;
-    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: auto;
     border-radius: 5px;
 }
 
 .movie-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 15px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .movie-card {
