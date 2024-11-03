@@ -14,4 +14,12 @@ new Vue({
             this.showDropdown = !this.showDropdown;
         }
     }
+    
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.querySelector('.cinema-dropdown');
+    dropdown.addEventListener('click', function() {
+        this.classList.toggle('show');
+    });
 });
