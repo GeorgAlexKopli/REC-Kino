@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    background-image: url('plahvatus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    image-rendering: auto;
+    image-resolution: auto;
+    height: 50px;
+}
+
+form {
+    background-color: #454545;
+    padding: 60px;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form2 {
+    background-color: #454545;
+    padding: 60px;
+    border-radius: 10px;
+    width: 800px;
+    height: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #FF4A09;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1.2em;
+}
+
+.login-button:hover {
+    background-color: #FFA48D;
+}
+
+.kast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #FF4A09;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.back-button {
+    position: absolute;
+    top: 110px;
+    left: 500px;
+    background-color: #ff7878;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+   
+}
+
+.back-button:hover {
+    background-color: #FF4A09;
+}
+
+a {
+    color: #FF4A09;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+h2 {
+    color: white;
+    font-size: 1,3em;
+    text-align: left;
+}
+
+.underline {
+    text-decoration: underline;
+}
