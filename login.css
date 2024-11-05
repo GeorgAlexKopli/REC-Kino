@@ -78,7 +78,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 .back-button {
     position: absolute;
     top: 110px;
-    left: 500px;
+    left: 520px;
     background-color: #ff7878;
     color: white;
     padding: 20px 50px;
@@ -115,4 +115,21 @@ h2 {
 
 .underline {
     text-decoration: underline;
+}
+
+.home-button {
+    background-color: #b1f757;
+    color: rgb(0, 0, 0);
+    padding: 20px 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2em;
+   
+}
+
+.home-button:hover {
+    background-color: #cbeba2;
 }
