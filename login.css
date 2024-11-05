@@ -24,12 +24,23 @@ form {
     align-items: center;
 }
 
+form2 {
+    background-color: #454545;
+    padding: 60px;
+    border-radius: 10px;
+    width: 800px;
+    height: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 label {
     color: white;
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;

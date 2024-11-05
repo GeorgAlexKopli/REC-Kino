@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REC Kino Kinokava</title>
+    <link rel="stylesheet" href="avaleht.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="🔍Search...">
+        
+    </div>
+    <button class="login-button" onclick="window.location.href='login.html';">Logi sisse</button>
+</div>
+
+<a href="https://www.eppkarsin.com/et/koolitused" target="_blank" rel="noopener noreferrer">
+    <img src="eppAdd.png" alt="Epp add" class="ad-banner">
+</a>
+
+<div class="top-movies">
+    <h2>Top filmid</h2>
+    <button class="show-schedule" onclick="window.location.href='kinokava.html'">Vaata kinokava</button>
+
+    
+    <div class="movie-cards">
+        
+        <div class="movie-card" v-for="movie in movies" :key="movie.title">
+            <a :href="movie.link">
+                <img class="movie-image" :src="movie.image" alt="Movie Image">
+                <div class="movie-title">{{ movie.title }}</div>
+            </a>
+            <div class="age-rating" :class="movie.ageRating">{{ movie.ageRatingText }}</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

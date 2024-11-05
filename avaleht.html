@@ -14,10 +14,12 @@
             <img class="logo" src="logo.png" alt="REC klubi"></img>
             <div class="cinema-dropdown" @click="toggleDropdown">
                 <div class="flex-container">
-                <div class="dropdown-text">
-                    <span>Kino <br> Tallinn - Kõik kinod</span>
-                </div>
-                <div class="dropdown-icon">▼</div>
+                    
+                    <div class="dropdown-text">
+                        <span>Kino <br> Tallinn - Kõik kinod <span style="margin-left: 550px">▼</span></span>      
+                    </div>
+
+                
                 </div> 
                 <div class="dropdown-content">
                     <a href="#">Helitehase Priima Kino</a>
@@ -38,7 +40,7 @@
 
         <div class="top-movies">
             <h2>Top filmid</h2>
-            <button class="show-schedule">Vaata kinokava</button>
+            <button class="show-schedule" onclick="window.location.href='kinokava.html'">Vaata kinokava</button>
 
             
             <div class="movie-cards">
