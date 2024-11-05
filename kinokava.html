@@ -34,7 +34,11 @@
             <button class="login-button" onclick="window.location.href='login.html';">Logi sisse</button>
         </div>
         
-        
+        <div class="day-selector">
+            <button v-for="day in days" :key="day" @click="selectDay(day)" class="day-button" :class="{ selected: selectedDay === day }">
+                {{ day }}
+            </button>
+        </div>
 
         <div class="top-movies">
             <div class="movie-cards">

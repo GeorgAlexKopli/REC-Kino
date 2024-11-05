@@ -78,7 +78,7 @@ body {
 .top-movies {
     color: black;
     padding: 0px;
-    padding-top: 200px;
+    padding-top: 40px;
     text-align: center;
     width: 100%;
     max-width: 900px;
@@ -105,7 +105,7 @@ body {
     grid-template-rows: repeat(3, auto);
     gap: 40px 60px; /* Maintain horizontal and vertical gaps */
     
-    max-width: 1000px;
+    max-width: 900px;
     padding-bottom: 50px; /* Adds space under the last row of cards */
 }
 
@@ -227,4 +227,32 @@ body {
 
 .back-button:hover {
     background-color: #FF4A09;
+}
+
+.day-selector {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 100px;
+    background-color: #FF4A09; /* Matches your background */
+    padding: 10px 0;
+}
+
+.day-button {
+    background-color: #333; /* Dark button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day-button.selected {
+    background-color: #FF7878; /* Highlight selected day */
+}
+
+.day-button:hover {
+    background-color: #555;
 }

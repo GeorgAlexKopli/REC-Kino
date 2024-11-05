@@ -2,6 +2,8 @@ new Vue({
     el: '#app',
     data: {
         showDropdown: false,
+        days: ['E', 'T', 'K', 'N', 'R', 'L', 'P'], // Abbreviated days
+        selectedDay: null,
         movies: [
             { title: 'Dom M.D.', ageRating: '18', ageRatingText: '18', image: "https://images-ext-1.discordapp.net/external/kHtsKrWG7nhSwzF2dNEXeNbluXdQLnlCPeNuwwfz1oo/https/i.pinimg.com/564x/39/3f/18/393f1822de8beac4ec32fc9c013346cd.jpg?format=webp&width=457&height=676" },
             { title: 'Serbia film', ageRating: 'pg13', ageRatingText: 'PG 13', image: "https://m.media-amazon.com/images/I/71gtrRlnX9L._AC_UF894,1000_QL80_.jpg" },
@@ -25,10 +27,14 @@ new Vue({
         
     },
     methods: {
+        selectDay(day) {
+            this.selectedDay = day; // Sets the selected day
+        },
         toggleDropdown() {
             this.showDropdown = !this.showDropdown;
         }
     }
+    
     
 });
 
