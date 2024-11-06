@@ -103,28 +103,28 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 40px 60px; /* Maintain horizontal and vertical gaps */
+    gap: 40px 60px; 
     
     max-width: 900px;
-    padding-bottom: 50px; /* Adds space under the last row of cards */
+    padding-bottom: 50px;
 }
 
 .movie-card {
     background-color: black;
     color: white;
-    padding: 10px; /* Increased padding for larger cards */
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     position: relative;
     border: 5px solid #D3D3D3;
-    width: 100%; /* Ensures each card takes full grid cell width */
+    width: 100%;
 }
 
 .movie-image {
     background-color: gray;
-    height: auto; /* Keep this for responsive images */
-    width: 100%; /* Ensures images fit the card */
-    max-height: 300px; /* Set a max height for consistency */
+    height: auto; 
+    width: 100%;
+    max-height: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,12 +249,12 @@ body {
     justify-content: center;
     gap: 5px;
     margin-top: 100px;
-    background-color: #FF4A09; /* Matches your background */
+    background-color: #FF4A09;
     padding: 10px 0;
 }
 
 .day-button {
-    background-color: #333; /* Dark button color */
+    background-color: #333;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -265,7 +265,7 @@ body {
 }
 
 .day-button.selected {
-    background-color: #FF7878; /* Highlight selected day */
+    background-color: #FF7878; 
 }
 
 .day-button:hover {

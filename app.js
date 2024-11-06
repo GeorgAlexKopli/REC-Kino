@@ -2,7 +2,7 @@ new Vue({
     el: '#app',
     data: {
         showDropdown: false,
-        days: ['E', 'T', 'K', 'N', 'R', 'L', 'P'], // Abbreviated days
+        days: ['E', 'T', 'K', 'N', 'R', 'L', 'P'],
         selectedDay: null,
         movies: [
             { title: 'Dom M.D.', ageRating: '18', ageRatingText: '18', image: "https://images-ext-1.discordapp.net/external/kHtsKrWG7nhSwzF2dNEXeNbluXdQLnlCPeNuwwfz1oo/https/i.pinimg.com/564x/39/3f/18/393f1822de8beac4ec32fc9c013346cd.jpg?format=webp&width=457&height=676" },
@@ -20,15 +20,20 @@ new Vue({
         ]
     },
     computed: {
-        // Repeats the movies array to fill 12 grid items
+        
         repeatedMovies() {
             return this.movies;
+            
+        },
+        repeated4Movies() {
+            return this.movies.slice(0, 4);
         }
+        
         
     },
     methods: {
         selectDay(day) {
-            this.selectedDay = day; // Sets the selected day
+            this.selectedDay = day; 
         },
         toggleDropdown() {
             this.showDropdown = !this.showDropdown;
@@ -40,7 +45,47 @@ new Vue({
 
 document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.querySelector('.cinema-dropdown');
-    dropdown.addEventListener('click', function() {
-        this.classList.toggle('show');
+    const dropdownItems = document.querySelectorAll('.dropdown-content a');
+    const selectedText = localStorage.getItem('selectedText');
+    const selectedLink = localStorage.getItem('selectedLink');
+    if (selectedText && selectedLink) {
+        const dropdownText = dropdown.querySelector('.dropdown-text p');
+        if (dropdownText) {
+            dropdownText.textContent = selectedText;
+        }
+        const dropdownLink = dropdown.querySelector('.dropdown-text a');
+        if (dropdownLink) {
+            dropdownLink.href = selectedLink;
+        }
+    }
+    const closeDropdown = function(event) {
+        if (!dropdown.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    };
+    dropdown.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdown.classList.toggle('show');
     });
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.stopPropagation();
+            const selectedText = event.target.textContent;
+            const selectedLink = event.target.getAttribute('href');
+            localStorage.setItem('selectedText', selectedText);
+            localStorage.setItem('selectedLink', selectedLink);
+            const dropdownText = dropdown.querySelector('.dropdown-text p');
+            if (dropdownText) {
+                dropdownText.textContent = selectedText;
+            }
+            const dropdownLink = dropdown.querySelector('.dropdown-text a');
+            if (dropdownLink) {
+                dropdownLink.href = selectedLink;
+            }
+            dropdown.classList.remove('show');
+        });
+    });
+    document.addEventListener('click', closeDropdown);
 });
+
+
