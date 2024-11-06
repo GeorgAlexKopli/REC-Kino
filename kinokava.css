@@ -160,7 +160,7 @@ body {
 
 .cinema-dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
     cursor: pointer;
 }
 
@@ -188,6 +188,14 @@ body {
     border-radius: 25px;
     text-decoration: none;
     display: block;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dropdown-text > p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dropdown-content a:hover {
@@ -206,6 +214,13 @@ body {
     border-radius: 25px;
     box-sizing: border-box;
     color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dropdown-text > span {
+    user-select: none;
 
 }
 
