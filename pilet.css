@@ -1,0 +1,40 @@
+body {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    background-color: #FF4A09;
+}
+
+.logo {
+    image-rendering: auto;
+    image-resolution: auto;
+    height: 50px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.search-bar {
+    display: flex;
+    margin: 0 100px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-right: 100px;
+    background-color: #D3D3D3;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: black;
+}
