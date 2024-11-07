@@ -43,13 +43,11 @@
 
         <div class="top-movies">
             <div class="movie-cards">
-                <div class="movie-card" v-for="(movie, index) in repeatedMovies" :key="index">
-                    <a :href="movie.link">
-                        <img class="movie-image" :src="movie.image" alt="Movie Image">
-                        <div class="movie-title">{{ movie.title }}</div>
-                    </a>
+                <a class="movie-card" v-for="(movie, index) in repeatedMovies" :key="movie.title" :href="'film.html?title=' + movie.title">
+                    <img class="movie-image" :src="movie.image" alt="Movie Image">
+                    <div class="movie-title">{{ movie.title }}</div>
                     <div class="age-rating" :class="movie.ageRating">{{ movie.ageRatingText }}</div>
-                </div>
+                </a>
             </div>
         </div>
         <button type="button" class="back-button" onclick="window.location.href='avaleht.html';">Tagasi</button>

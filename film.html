@@ -34,24 +34,6 @@
             </div>
             <button class="login-button" onclick="window.location.href='login.html';">Logi sisse</button>
         </div>
-        
-        <a href="https://www.eppkarsin.com/et/koolitused" target="_blank" rel="noopener noreferrer">
-            <img src="eppAdd.png" alt="Epp add" class="ad-banner">
-        </a>
-
-        <div class="top-movies">
-            <h2>Top filmid</h2>
-            <button class="show-schedule" onclick="window.location.href='kinokava.html'">Vaata kinokava</button>
-
-            
-            <div class="movie-cards">
-                <a class="movie-card" v-for="(movie, index) in repeated4Movies" :key="movie.title" :href="'film.html?title=' + movie.title">
-                    <img class="movie-image" :src="movie.image" alt="Movie Image">
-                    <div class="movie-title">{{ movie.title }}</div>
-                    <div class="age-rating" :class="movie.ageRating">{{ movie.ageRatingText }}</div>
-                </a>
-            </div>
-        </div>
     </div>
 
     

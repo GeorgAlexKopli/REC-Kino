@@ -37,6 +37,9 @@ new Vue({
         },
         toggleDropdown() {
             this.showDropdown = !this.showDropdown;
+        },
+        saveMovie(movie) {
+            localStorage.setItem('movie', JSON.stringify(movie));
         }
     }
     
